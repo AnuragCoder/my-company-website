@@ -1,0 +1,16 @@
+.ic{     letter-spacing: 24px; font-size:33px}
+.Aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  i.fa.fa-youtube-play {
+      color: red;
+     
+  }
+
+  footer {
+    margin: -15px;
+
+  }

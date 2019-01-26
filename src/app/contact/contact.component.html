@@ -1,0 +1,121 @@
+<!--contect box-->
+
+
+  <div class='contact-message'>
+   <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+   <!--Section description-->
+   <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? How can we help you achieve your goals? Please do not hesitate to contact us directly. Our team will come back to you within
+       a matter of hours to help you.</p>
+
+<div class="container">
+<div class="box">
+  <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+  <div class='details'><h3>India</h3></div>
+</div>
+
+<div class="box">
+  <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+  <div class='details'><h3>+91 9033446195</h3></div>
+</div>
+
+<div class="box">
+  <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+  <div class='details'><h3>anurag.qsp@gmail.com</h3></div>
+</div>
+</div>
+</div>
+<!--contect box ends-->
+
+
+
+<div class="container" style="margin: 44px">
+  <div class="row">
+      <div class="col-md-12">
+        <div class="card person-card">
+          <div class="card-body">
+    <form [formGroup]="ContectForm"  (ngSubmit)="onSubmit()">
+              <!-- Sex image -->
+              <img id="img_sex" class="person-img"
+                  src="https://visualpharm.com/assets/217/Life%20Cycle-595b40b75ba036ed117d9ef0.svg">
+              <h2 id="who_message" class="card-title">Who are you ?</h2>
+              <!-- First row (on medium screen) -->
+         
+              <div class="row">
+                  <div class="form-group col-md-2">
+                      <select id="input_sex" class="form-control" name='gender'>
+                          <option value="male">Mr.</option>
+                          <option value="female">Ms.</option>
+                      </select>
+                  </div>
+                  <div class="form-group col-md-5">
+                      <input id="first_name" type="text"  formControlName='fname' class="form-control" placeholder="First name">
+                      <div id="first_name_feedback" class="invalid-feedback">
+                          
+                      </div>
+                  </div>
+                  
+                  <div class="form-group col-md-5">
+                      <input id="last_name" type="text" formControlName='lname' class="form-control" placeholder="Last name">
+                      <div id="last_name_feedback" class="invalid-feedback">
+                          
+                      </div>
+                  </div>
+              </div>
+
+
+               
+              <div class="col-md-12 form_mid_content">
+                    <h2 class="card-title">How to contact you ?</h2>
+                    <div class="row">
+
+                    <div class="form-group col-md-6">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon-width"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="text" formControlName='' class="form-control" name="email" placeholder="Email">
+                        </div>
+                        
+                    </div>
+                    
+                  
+                   
+                    <div class="form-group col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-addon glyphicon-width"><i class="	glyphicon glyphicon-earphone"></i></span>
+                                <input type="text" formControlName='phone' class="form-control" name="phone" placeholder='Please enter your phone number'>
+                            </div>
+                            
+                        </div>
+                  </div>
+                </div>
+
+      
+    
+        <div class="col-md-12 form_mid_content">
+            
+      
+                    <h2 class="card-title">Message for US</h2>
+                    <div class="form-group">
+                      <div class="form-group">
+                          <label for="comment">Comment:</label>
+                          <textarea [(ngModel)]="mesage" formControlName='message' class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-md-3">
+                <div style="margin-top: 1em ;">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit!</button>
+                 </div>
+                 </div>
+          <div class="col-md-9"></div>
+    </form>
+                
+          </div>
+      </div>
+      </div>
+    </div>
+</div>
+
+     
+      
+      
